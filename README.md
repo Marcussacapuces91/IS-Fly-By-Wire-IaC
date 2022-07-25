@@ -2,13 +2,12 @@
 
 Une analyse d'un système d'information (SI) piloté par le "code" (IaC).
 
-## Conceptes
+## Concepts
 
 ### Asservissement d'un système (processus industriel)
 
 La structure générale d'un système asservi peut se représenter comme suit :
 
-![](https://raw.githubusercontent.com/Marcussacapuces91/IS-Fly-By-Wire-IaC/main/Asservissement.drawio.png "Modèle de processus asservi")
 ![](Asservissement.drawio.png "Modèle de processus asservi")
 
 1. On indique une `Consigne` au système qui est la valeur que l'on souhaite obtenir en sortie (par ex. vitesse de moteur ou température du processus) ;
@@ -36,7 +35,6 @@ Le terme français est « commandes de vol électriques » ne rend pas hommage a
 
 ### Infrastructure as Code (IaC)
 
-
-
-
+Il s'agit d'un ensemble de scripts ou applications qui permettent le déploiement et le maintient en condition opérationnelles d'une infrastructure informatique et applicative. Ces applications sont alimentées par du code qui décrit l'infrastructure à déployer. On retrouve dans ce champ, les concepts précédents d'asservissement et de modèle numérique de processus.
+ 
 *Référence Wikipédia* : https://fr.wikipedia.org/wiki/Infrastructure_as_code
