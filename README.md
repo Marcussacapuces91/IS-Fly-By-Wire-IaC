@@ -1,3 +1,10 @@
 # IS-Fly-By-Wire - IaC
 
-A starting job for Infrastructure (and application) as Code
+Une analyse d'un SI piloté par le "code" (IaC)
+
+## Concepts
+### Asservissement d'un système (industriel)
+
+La structure générale d'un système asservi peut se réprésenté comme suit :
+
+
