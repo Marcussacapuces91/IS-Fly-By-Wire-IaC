@@ -9,6 +9,7 @@ Une analyse d'un système d'information (SI) piloté par le "code" (IaC).
 La structure générale d'un système asservi peut se représenter comme suit :
 
 ![](https://raw.githubusercontent.com/Marcussacapuces91/IS-Fly-By-Wire-IaC/main/Asservissement.drawio.png "Modèle de processus asservi")
+![](Asservissement.drawio.png "Modèle de processus asservi")
 
 1. On indique une `Consigne` au système qui est la valeur que l'on souhaite obtenir en sortie (par ex. vitesse de moteur ou température du processus) ;
 2. Le système compare cette `Consigne` avec la valeur actuellement mesurée et obtient ainsi une `Erreur` (Ɛ) ;
@@ -34,5 +35,8 @@ Le terme français est « commandes de vol électriques » ne rend pas hommage a
 *Référence Wikipédia* : https://fr.wikipedia.org/wiki/Commandes_de_vol_%C3%A9lectriques
 
 ### Infrastructure as Code (IaC)
+
+
+
 
 *Référence Wikipédia* : https://fr.wikipedia.org/wiki/Infrastructure_as_code
