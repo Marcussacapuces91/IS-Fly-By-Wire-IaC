@@ -22,10 +22,18 @@
   </folder>
   <folder name="Technology &amp; Physical" id="id-4beff6bd516c42688183bf36aa269e5a" type="technology">
     <element xsi:type="archimate:Equipment" name="SI Monde Réel" id="id-6ea4d9f3137a493884c94252f519e19b"/>
+    <element xsi:type="archimate:Device" name="VM" id="id-9879c3cd2b00453798c3e7f80815eb74" profiles="id-d530a9fefa3545dc9249137863fc2f42"/>
+    <element xsi:type="archimate:Node" name="Web 1" id="id-5fd60f7b44454ba6a65356b81df2b674"/>
+    <element xsi:type="archimate:SystemSoftware" name="System Software" id="id-9adbb6c5e96340879940bc6aefccd161"/>
+    <element xsi:type="archimate:Path" name="Path" id="id-c8541553d6d14e29a9b1c2eac5feac3b"/>
   </folder>
   <folder name="Motivation" id="id-76591b0952304091b53ae89d5f035d0e" type="motivation"/>
   <folder name="Implementation &amp; Migration" id="id-2620930db35f4ae08f011180699cd161" type="implementation_migration"/>
-  <folder name="Other" id="id-fd28b6188ef6400580a40c8cd7ba2ff9" type="other"/>
+  <folder name="Other" id="id-fd28b6188ef6400580a40c8cd7ba2ff9" type="other">
+    <element xsi:type="archimate:Grouping" name="Production" id="id-73f7080308f4431fa163a1e9046e2eaf">
+      <property key="env" value="P"/>
+    </element>
+  </folder>
   <folder name="Relations" id="id-ced069dc3760473d8f766511e2b0fba1" type="relations">
     <element xsi:type="archimate:AccessRelationship" name="Lect/Ecrit" id="id-344d5c25c5084026ba4a9e575a545bd3" source="id-5b8d149000cc42feb23b0af335affa08" target="id-9a87381e0f6c4660ae2ed2a72324b87a" accessType="3"/>
     <element xsi:type="archimate:TriggeringRelationship" name="rédige" id="id-78ffa8bf9cf24fe4a1bb97e97355fa6c" source="id-21312aede5d3455cbe9da8fbc79588c8" target="id-5b8d149000cc42feb23b0af335affa08"/>
@@ -44,6 +52,9 @@
     <element xsi:type="archimate:TriggeringRelationship" name="CUD" id="id-3186078be0c144da987b0f532e9f8bec" source="id-d19c174fe9a74946869479a5c9bed2a4" target="id-6ea4d9f3137a493884c94252f519e19b"/>
     <element xsi:type="archimate:AccessRelationship" name="main" id="id-f98cb78fccee452dbc26b433a1366548" source="id-2db162de685b498fbeaf00d8867f6af3" target="id-9a87381e0f6c4660ae2ed2a72324b87a" accessType="1"/>
     <element xsi:type="archimate:AccessRelationship" name="main" id="id-97411ba7e842403491ae328e53bf66b0" source="id-2db162de685b498fbeaf00d8867f6af3" target="id-b0af07c67845409eaa1617bbd7ac6fbe" accessType="1"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-86e77f90d6a64a1eaaaa58be16af47b8" source="id-5fd60f7b44454ba6a65356b81df2b674" target="id-9879c3cd2b00453798c3e7f80815eb74"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-b6e67902d9d24fcea6cf04e8940de946" source="id-73f7080308f4431fa163a1e9046e2eaf" target="id-5fd60f7b44454ba6a65356b81df2b674"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-393bedde8a4a47c789f6767c8c24cd21" source="id-5fd60f7b44454ba6a65356b81df2b674" target="id-9adbb6c5e96340879940bc6aefccd161"/>
   </folder>
   <folder name="Views" id="id-35b0f6527f5b41e19fabe2b402d9d06f" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-b9168f6ab56f4fbe8424e48cd2a5fbbf">
@@ -136,11 +147,35 @@
         <bounds x="540" y="24" width="397" height="116"/>
         <sourceConnection id="id-db643f202abd4c14b4a9bc62ffb4833d" source="id-8e9be72b5750429e9f8a47132e261768" target="id-6b82fa5f0da0474d85e8138c5561da84"/>
         <sourceConnection id="id-03261b71e8bc439caaaee00a87b3268a" source="id-8e9be72b5750429e9f8a47132e261768" target="id-76871bc1f6ff4a8da0c4afbd0afe1fdb"/>
-        <sourceConnection id="id-f20af9e4074d4da9bb21cad2ff5abc65" source="id-8e9be72b5750429e9f8a47132e261768" target="id-6bcd88d9e3d34f54a57b8e5e7a814462"/>
+        <sourceConnection id="id-f20af9e4074d4da9bb21cad2ff5abc65" source="id-8e9be72b5750429e9f8a47132e261768" target="id-6bcd88d9e3d34f54a57b8e5e7a814462">
+          <bendpoint startX="-186" startY="314" endX="264" endY="-15"/>
+        </sourceConnection>
         <content>Mise en oeuvre de règles de sécurité, empêchant le disfonctionnement du SI (Domaine de Vol).&#xD;
 &#xD;
 Les règles de sécurité sont issues des Instances applicatives et des templates</content>
       </child>
     </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Ex DAT" id="id-45013c3e74284e3eb8abd726a83723ee">
+      <child xsi:type="archimate:DiagramObject" id="id-c82138f86e6946b2ab7602e9961afe25" textAlignment="1" archimateElement="id-73f7080308f4431fa163a1e9046e2eaf">
+        <bounds x="36" y="36" width="481" height="397"/>
+        <feature name="labelExpression" value="${name} [${property:env}]"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a7b5c30df2eb4b7fad8f1ba5b43a109e" source="id-c82138f86e6946b2ab7602e9961afe25" target="id-03816b4cdd0d4ae88a5be5e2df0021ec" archimateRelationship="id-b6e67902d9d24fcea6cf04e8940de946"/>
+        <child xsi:type="archimate:DiagramObject" id="id-03816b4cdd0d4ae88a5be5e2df0021ec" targetConnections="id-a7b5c30df2eb4b7fad8f1ba5b43a109e" archimateElement="id-5fd60f7b44454ba6a65356b81df2b674">
+          <bounds x="192" y="36" width="277" height="241"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9d5f189453784d4ab3f1a7d3b2f5c998" source="id-03816b4cdd0d4ae88a5be5e2df0021ec" target="id-fb9b0d8de79343b29f8dc2df9127961c" archimateRelationship="id-86e77f90d6a64a1eaaaa58be16af47b8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-209d1cfe57bc4cfb84ef0a9e2e44ff1c" source="id-03816b4cdd0d4ae88a5be5e2df0021ec" target="id-e30b694d27874ebcbd1bbbb215b0cd92" archimateRelationship="id-393bedde8a4a47c789f6767c8c24cd21"/>
+          <child xsi:type="archimate:DiagramObject" id="id-fb9b0d8de79343b29f8dc2df9127961c" targetConnections="id-9d5f189453784d4ab3f1a7d3b2f5c998" archimateElement="id-9879c3cd2b00453798c3e7f80815eb74" type="1">
+            <bounds x="12" y="192" width="120" height="37"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e30b694d27874ebcbd1bbbb215b0cd92" targetConnections="id-209d1cfe57bc4cfb84ef0a9e2e44ff1c" archimateElement="id-9adbb6c5e96340879940bc6aefccd161">
+            <bounds x="12" y="120" width="120" height="55"/>
+          </child>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5d959cc2ce5549dc8bc8416696da4b32" archimateElement="id-c8541553d6d14e29a9b1c2eac5feac3b" type="1">
+        <bounds x="780" y="399" width="229" height="55"/>
+      </child>
+    </element>
   </folder>
+  <profile name="VM RHEL 8 - Intranet - Standalone" id="id-d530a9fefa3545dc9249137863fc2f42" conceptType="Device"/>
 </archimate:model>
