@@ -27,14 +27,14 @@ Cette méthode d'asservissement d'un processus est généreusement documentée e
 Le terme français est « commandes de vol électriques » ne rend pas hommage aux fonctions portées par cette logique. Il s'agit en fait d'un certain nombre d'améliorations portées autour des calculateurs de vol embarqués dans les avions qui facilitent et sécurisent les actions réalisées par les pilotes pendant les différentes phase de vol. Les principes sont globalement les suivants :
 
 * Un modèle (théorique) de l'avion est simulé par le calculateur de vol ;
-* Le pilote agit sur le modèle uniquement et plus sur les actionneurs (gouvernes, *etc*.) de l'avion ;
+* Le pilote agit uniquement sur le modèle et non-plus sur les actionneurs (gouvernes, *etc*.) de l'avion ;
 * Le calculateur assure les commandes des actionneurs (généralement électriques ou hydrauliques) pour mettre l'avion dans la même situation que le modèle (boucle d'asservissement) ;
-* Le calculateur vérifie que les ordres qu'il reçoit du pilote sont conformes aux caractéristiques techniques de l'avion (vitesse maximum, *etc.*).
+* Le calculateur vérifie que les ordres qu'il reçoit du pilote sont conformes aux caractéristiques techniques de l'avion dites « domaine de vol » (vitesse maximum, *etc.*).
 
 *Référence Wikipédia* : [https://fr.wikipedia.org/wiki/Commandes de vol électriques](https://fr.wikipedia.org/wiki/Commandes_de_vol_%C3%A9lectriques)
 
 ### Infrastructure as Code (IaC)
 
-Il s'agit d'un ensemble de scripts ou applications qui permettent le déploiement et le maintient en condition opérationnelles d'une infrastructure informatique et applicative. Ces applications sont alimentées par du code qui décrit l'infrastructure à déployer. On retrouve dans ce champ, les concepts précédents d'asservissement et de modèle numérique de processus.
+Il s'agit d'un ensemble de scripts ou applications qui permettent le déploiement et le maintient en conditions opérationnelles d'une infrastructure informatique et applicative. Ces applications sont alimentées par du code qui décrit l'infrastructure à déployer. On retrouve dans ce champ, les concepts précédents d'asservissement et de modèle numérique de processus.
  
 *Référence Wikipédia* : [https://fr.wikipedia.org/wiki/Infrastructure as code](https://fr.wikipedia.org/wiki/Infrastructure_as_code)
