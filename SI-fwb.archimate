@@ -22,8 +22,8 @@
   </folder>
   <folder name="Technology &amp; Physical" id="id-4beff6bd516c42688183bf36aa269e5a" type="technology">
     <element xsi:type="archimate:Equipment" name="SI Monde Réel" id="id-6ea4d9f3137a493884c94252f519e19b"/>
-    <element xsi:type="archimate:Device" name="VM" id="id-9879c3cd2b00453798c3e7f80815eb74" profiles="id-d530a9fefa3545dc9249137863fc2f42"/>
-    <element xsi:type="archimate:Node" name="Web 1" id="id-5fd60f7b44454ba6a65356b81df2b674"/>
+    <element xsi:type="archimate:Device" name="VM" id="id-9879c3cd2b00453798c3e7f80815eb74"/>
+    <element xsi:type="archimate:Node" name="Web 1" id="id-5fd60f7b44454ba6a65356b81df2b674" profiles="id-d530a9fefa3545dc9249137863fc2f42"/>
     <element xsi:type="archimate:SystemSoftware" name="System Software" id="id-9adbb6c5e96340879940bc6aefccd161"/>
     <element xsi:type="archimate:Path" name="Path" id="id-c8541553d6d14e29a9b1c2eac5feac3b"/>
   </folder>
@@ -177,5 +177,5 @@ Les règles de sécurité sont issues des Instances applicatives et des template
       </child>
     </element>
   </folder>
-  <profile name="VM RHEL 8 - Intranet - Standalone" id="id-d530a9fefa3545dc9249137863fc2f42" conceptType="Device"/>
+  <profile name="VM RHEL 8 - Intranet - Standalone" id="id-d530a9fefa3545dc9249137863fc2f42" conceptType="Node"/>
 </archimate:model>
