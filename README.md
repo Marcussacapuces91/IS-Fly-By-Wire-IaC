@@ -38,3 +38,9 @@ Le terme français est « commandes de vol électriques » ne rend pas hommage a
 Il s'agit d'un ensemble de scripts ou applications qui permettent le déploiement et le maintient en conditions opérationnelles d'une infrastructure informatique et applicative. Ces applications sont alimentées par du code qui décrit l'infrastructure à déployer. On retrouve dans ce champ, les concepts précédents d'asservissement et de modèle numérique de processus.
  
 *Référence Wikipédia* : [https://fr.wikipedia.org/wiki/Infrastructure as code](https://fr.wikipedia.org/wiki/Infrastructure_as_code)
+
+## Synthèse
+
+Les 3 concepts précédents se synthétisent dans le schéma fonctionnel suivant :
+
+![](Fonctionnel.png "Architecture Fonctionnelle")
