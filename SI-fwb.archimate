@@ -57,7 +57,7 @@
     <element xsi:type="archimate:CompositionRelationship" id="id-393bedde8a4a47c789f6767c8c24cd21" source="id-5fd60f7b44454ba6a65356b81df2b674" target="id-9adbb6c5e96340879940bc6aefccd161"/>
   </folder>
   <folder name="Views" id="id-35b0f6527f5b41e19fabe2b402d9d06f" type="diagrams">
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-b9168f6ab56f4fbe8424e48cd2a5fbbf">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Fonctionnel" id="id-b9168f6ab56f4fbe8424e48cd2a5fbbf">
       <child xsi:type="archimate:DiagramObject" id="id-51bf66a794f2495092786aee63c7b68b" archimateElement="id-21312aede5d3455cbe9da8fbc79588c8">
         <bounds x="36" y="36" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-3d27076804654addbd8ca1c8276e2bac" source="id-51bf66a794f2495092786aee63c7b68b" target="id-d5c3a2eb6e7243bd95a8878ffdf29798" archimateRelationship="id-78ffa8bf9cf24fe4a1bb97e97355fa6c"/>
